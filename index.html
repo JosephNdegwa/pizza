@@ -15,21 +15,21 @@
         
         <div id="lay">
                 <h1>Guy Pizza</h1>
-                <h2 class="headings">You one stop plug for delicious pizza!</h2>
+                <h2 class="mb-4 text-success floater"><strong>Your one stop plug for delicious pizza!</strong></h2>
         </div>
         
     </header>
 </div>
 
-    <div class="container">
-        <div class="jumbotron">
+        <div class="container">
+          <div class="jumbotron">
             <h2 class="headings">Our Menu</h2><br>
             <div class="row" id="menu">
               <div class="col-md-4">
                 <div class="frame">
                   <img src="images/veggie.jpg">
                     <div class="caption">
-                      <h4 class="port">Veggie Pizza</h4>
+                      <h4 class="pizza">Veggie Pizza</h4>
                     </div>
                 </div>        
               </div>
@@ -38,7 +38,7 @@
                 <div class="frame">
                   <img src="images/pepperoni.jpg">
                     <div class="caption">
-                      <h4 class="port">Pepperoni Pizza</h4>
+                      <h4 class="pizza">Pepperoni Pizza</h4>
                     </div> 
                 </div>
               </div>  
@@ -47,16 +47,17 @@
                 <div class="frame">
                           <img src="images/beef.jpg">
                         <div class="caption">
-                          <h4 class="port">Beef Pizza</h4>
+                          <h4 class="pizza">Beef Pizza</h4>
                         </div> 
                 </div>
               </div>
+            </div>
             <div class="row" id="portfolio">   
               <div class="col-md-4">
                 <div class="frame">
                           <img src="images/margerita.jpg">
                         <div class="caption">
-                          <h4 class="port">Margerita Pizza</h4>
+                          <h4 class="pizza">Margerita Pizza</h4>
                         </div> 
                 </div>
               </div>
@@ -67,7 +68,7 @@
                   <div class="frame">
                            <img src="images/chicken.jpg">
                         <div class="caption">
-                            <h4 class="port">BBQ Chicken Pizza</h4>
+                            <h4 class="pizza">BBQ Chicken Pizza</h4>
                         </div> 
                        
                     </div>
@@ -77,11 +78,60 @@
                     <div class="frame">
                               <img src="images/hawaiian.jpg">
                             <div class="caption">
-                              <h4 class="port">Hawaiian Pizza</h4>
+                              <h4 class="pizza">Hawaiian Pizza</h4>
                             </div> 
                     </div>
                   </div>
 
             </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <form action="">
+              <label for="select">Pick Flavor</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name">
+                <!-- <option selected value="choose">Choose your flavor</option> -->
+                <option value="Chicken Tikka">Veggie Pizza </option>
+                <option value="PeriPeri Pizza">Pepperoni Pizza</option>
+                <option value="Raspberry Dessert Pizza">Beef Pizza</option>
+                <option value="Chicken Alfredo Pizza">Margerita Pizza</option>
+                <option value="Sunchoke Pizza">BBQ Chicken Pizza</option>
+                <option value="Buffalo Chicken Sticks">Hawaiian Pizza</option>
+              </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Pick size</option>
+              <option value="large">Deluxe  Ksh. 1100</option>
+              <option value="medium">Medium  Ksh. 800</option>
+              <option value="small">Small  Ksh. 500</option>
+            </select>
+            <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                  <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy Ksh. 200</option>
+                <option value="Stuffed">Stuffed Ksh. 100</option>
+                <option value="Gluten">Gluten Ksh. 150</option>
+              </select>
+            <label for="Toppings">Select Toppings at Ksh. 80 each</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sauce" value="Sauce" name="toppings">
+                <label class="custom-control-label" for="Bacon">Sauce</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Onions" value="Onions" name="toppings">
+                <label class="custom-control-label" for="Onions">Onions</label>
+              </div>
+              <br><br>
+            <button type="submit" class="btn btn-primary success">Proceed</button>
+            
+          </form>
+        </div>
+
+
 </body>
 </html>
