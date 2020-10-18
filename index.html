@@ -88,56 +88,107 @@
         </div>
 
     <div class="row">
-      <div class="col-sm-5">
-        <div class="overlay-1">
-          <div class="container-form">
-            <form action="">
-              <label for="select">Pick Flavor</label>
-              <select class="browser-default custom-select custom-select-md mb-3 name">
-                <option selected value="0">Select Flavor</option>
-                <option value="Veggie Pizza">Veggie Pizza </option>
-                <option value="Pepperoni Pizza">Pepperoni Pizza</option>
-                <option value="Beef Pizza">Beef Pizza</option>
-                <option value="Margerita Pizza">Margerita Pizza</option>
-                <option value="Sunchoke Pizza">BBQ Chicken Pizza</option>
-                <option value="Margerita Pizza">Hawaiian Pizza</option>
-              </select>
-            <label for="select">Select Size</label>
-            <select class="browser-default custom-select custom-select-md mb-3" id="size">
-              <option selected value="0">Pick size</option>
-              <option value="large">Deluxe  Ksh. 1100</option>
-              <option value="medium">Medium  Ksh. 800</option>
-              <option value="small">Small  Ksh. 500</option>
-            </select>
-            <label for="crust">Choose your favorite Crust!</label>
-              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                <option selected value="0">Select your preferred crust</option>
-                <option value="Crispy">Crispy Ksh. 200</option>
-                <option value="Stuffed">Stuffed Ksh. 100</option>
-                <option value="Gluten">Gluten Ksh. 150</option>
-              </select>
-            <label for="Toppings">Select Toppings at Ksh. 80 each</label><br>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Sauce" value="Sauce" name="toppings">
-                <label class="custom-control-label" for="Sauce">Sauce</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" id="Onions" value="Onions" name="toppings">
-                <label class="custom-control-label" for="Onions">Onions</label>
-              </div>
-              <br><br>
-            <button type="submit" class="btn btn-primary success">Proceed</button>
-            
-          </form>
+          <div class="col-sm-5">
+            <div class="overlay-1">
+              <div class="container-form">
+                <form action="">
+                  <label for="select">Pick Flavor</label>
+                  <select class="browser-default custom-select custom-select-md mb-3 name">
+                    <option selected value="0">Select Flavor</option>
+                    <option value="Veggie Pizza">Veggie Pizza </option>
+                    <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                    <option value="Beef Pizza">Beef Pizza</option>
+                    <option value="Margerita Pizza">Margerita Pizza</option>
+                    <option value="Sunchoke Pizza">BBQ Chicken Pizza</option>
+                    <option value="Margerita Pizza">Hawaiian Pizza</option>
+                  </select>
+                <label for="select">Select Size</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                  <option selected value="0">Pick size</option>
+                  <option value="deluxe">Deluxe  Ksh. 1100</option>
+                  <option value="medium">Medium  Ksh. 800</option>
+                  <option value="small">Small  Ksh. 500</option>
+                </select>
+                <label for="crust">Choose your favorite Crust!</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <option selected value="0">Select your preferred crust</option>
+                    <option value="Crispy">Crispy Ksh. 200</option>
+                    <option value="Stuffed">Stuffed Ksh. 100</option>
+                    <option value="Gluten">Gluten Ksh. 150</option>
+                  </select>
+                <label for="Toppings">Select Toppings at Ksh. 80 each</label><br>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                    <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Sauce" value="Sauce" name="toppings">
+                    <label class="custom-control-label" for="Sauce">Sauce</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Onions" value="Onions" name="toppings">
+                    <label class="custom-control-label" for="Onions">Onions</label>
+                  </div>
+                  <br><br>
+                <button type="submit" class="btn btn-primary success">Proceed</button>
+                
+              </form>
+            </div>
+            </div>
+          </div>
+    
+    
+            <div class="overlay-1">
+            <div class="col-sm-8">
+                <div id="information">
+                <p>Your order will be processed and delivered within the next half an hour</p>
+                <p>Please make sure you pay the full amount as specified on the website</p>
+            </div>
+            <div class="choise">
+              <h2>Your Order is:</h2>
+                <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                  </tr>                  
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p> 
+              <p id="addedprice">Delivery cost is Ksh.150</p>
+              <p id="finallmessage"></p>
+            </div>
+            <button class="btn btn-primary success addPizza">Add Pizza</button>
+            <button class="btn btn-primary success" id="checkout">Checkout</button>
+            <button class="btn btn-primary success deliver">Delivery?</button>
+          </div>
+          <div class="delivery">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                  <button class="btn btn-primary success" id="final-order">Place Order</button>
+                </div>
+              </form>
+          </div>
         </div>
-        </div>
-      </div>
+      
     </div>
-
 
 </body>
 </html>
