@@ -1,11 +1,16 @@
-html,body{
+html,body,.container{
     scroll-behavior: smooth;
-  }
+}
+
+.header-1 {
+    color: wheat;
+}
+
 
 body{
     margin: 0;
     padding: 0;
-  }
+}
 
 .headings {
     font-weight: bold;
@@ -19,13 +24,13 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    padding-top: 10%;
+    padding-top: 20%;
     padding-bottom: 38%;
     position: relative;
     overflow-x: hidden;
 }
 
-#lay {
+#overlay {
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
@@ -73,23 +78,29 @@ body{
     font-family: 'Sansita Swashed', cursive;
 }
 
-#addedprice{
-    display: none;
-}
+
 
 .choise{
     display: none;
     padding-left: 2%;
     padding-right: 2%;
 }
-.deliver{
+
+.deliver {
     display: none;
 }
+
 .delivery{
     display: none;
     padding-left: 10%;
     padding-right: 10%;
 }
+
+#addedprice {
+    display: none;
+}
+
+
 td,th{
     font-size: 20px;
     color: white;
@@ -113,6 +124,7 @@ td,th{
     padding-top: 4%;
     padding-bottom: 4%;
     font-family: 'Sansita Swashed', cursive;
+   
 }
 
 #information{
@@ -123,15 +135,6 @@ td,th{
     color: white;
 }
 
-@media only screen and (max-width: 485px){
-.flex-xs-column {
-      flex-direction: column;
-}
-}
-@media only screen and (max-width: 767px){
-.section {
-      padding-top: 30px;
-}
-.flex-xs-column {
-      flex-direction: column;
+.footer {
+    text-align: center;
 }
