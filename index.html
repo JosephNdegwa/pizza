@@ -11,16 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div  class="header">
+
+  <div  class="header"> 
     <header class="container">
-        
         <div id="lay">
-                <h1>Guy Pizza</h1>
-                <h2 class="mb-4 text-success floater"><strong>Your one stop plug for delicious pizza!</strong></h2>
+                <h1 class="header-1">Guy Pizza</h1>
+                <h2 class="header-1"><strong>Your one stop plug for delicious pizza!</strong></h2>
         </div>
         
     </header>
-</div>
+  </div>
+
 
         <div class="container">
           <div class="jumbotron">
@@ -88,9 +89,13 @@
           </div>
         </div>
 
+  <div class="container-fluid order" id="make-order">
+        <div class="controls-top text-center" id="Order-now"> 
+          <h2 class="headings">Place Order Here</h2><br>
+        </div>
     <div class="row">
           <div class="col-sm-5">
-            <div class="overlay-1">
+            
               <div class="container-form">
                 <form action="">
                   <label for="select">Pick Flavor</label>
@@ -131,24 +136,25 @@
                     <label class="custom-control-label" for="Onions">Onions</label>
                   </div>
                   <br><br>
-                <button type="submit" class="btn btn-primary success">Proceed</button>
+                <button type="submit" class="btn btn-primary success proceed">Proceed</button>
                 
               </form>
             </div>
             </div>
-          </div>
+          
     
     
-            <div class="overlay-1">
-            <div class="col-sm-8">
+           
+            <div class="col-sm-7">
                 <div id="information">
                 <p>Your order will be processed and delivered within the next half an hour</p>
                 <p>Please make sure you pay the full amount as specified on the website</p>
+                <p id="regards">Regards, Guy Pizza</p>
             </div>
             <div class="choise">
-              <h2>Your Order is:</h2>
+                <h2>Your have ordered the following</h2>
                 <div id="your-orders">
-                <table class="table table-sm  pizzatable">
+              <table class="table table-sm  pizzatable">
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
@@ -170,26 +176,31 @@
               </table>
               <p id="pizzatotal"></p>
               <p id="totalbill"></p> 
-              <p id="addedprice">Delivery cost is Ksh.150</p>
+              <p id="addedprice">Delivery cost is Ksh.100</p>
               <p id="finallmessage"></p>
             </div>
             <button class="btn btn-primary success addPizza">Add Pizza</button>
             <button class="btn btn-primary success" id="checkout">Checkout</button>
-            <button class="btn btn-primary success deliver">Delivery?</button>
+            <button class="btn btn-primary success deliver">Delivery</button>
           </div>
           <div class="delivery">
               <form action="">
                 <div class="form-group">
                   <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone">
                   <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
                   <button class="btn btn-primary success" id="final-order">Place Order</button>
                 </div>
               </form>
           </div>
         </div>
-      
+      </div>
     </div>
 
+    <div class="footer">
+      <footer>
+        <p>&copy; 2020 | Guy Pizza</p>
+      </footer>
+    </div>
 </body>
 </html>
