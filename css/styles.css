@@ -1,5 +1,10 @@
-html{
+html,body{
     scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
   }
 
 .headings {
@@ -90,6 +95,43 @@ td,th{
     color: white;
 }
 .choise h2{
-    color:orange;
     text-align: left;
+}
+
+#your-orders{
+    color: white;
+    font-size: 30px;
+}
+
+.order{
+    background-attachment: fixed;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#information{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: white;
+}
+
+@media only screen and (max-width: 485px){
+.flex-xs-column {
+      flex-direction: column;
+}
+}
+@media only screen and (max-width: 767px){
+.section {
+      padding-top: 30px;
+}
+.flex-xs-column {
+      flex-direction: column;
 }
