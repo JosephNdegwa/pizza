@@ -56,14 +56,13 @@ $("button.proceed").click(function(event){
     }
 
     let toppingValue = ptopping.length*50;
-    console.log("toppins value" + toppingValue);
+    console.log("toppings value" + toppingValue);
 
     if((psize == "0") && (pcrust == "0")){
       console.log("nothing selected");
       $("button.proceed").show();
       $("#information").show();
-      $("div.choise").hide();
-      alert("Please select pizza size and crust"); 
+      alert("Please select a pizza size and crust"); 
     }
     else{
       $("button.proceed").hide();
@@ -148,8 +147,8 @@ $("button.proceed").click(function(event){
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
-      console.log("Your total bills is sh. "+checkoutTotal);
-      $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      console.log("Your bills is Ksh. "+checkoutTotal);
+      $("#pizzatotal").append("Your bill is Ksh. "+checkoutTotal);
     });
 
     // home delivery button
@@ -161,8 +160,8 @@ $("button.proceed").click(function(event){
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let deliceryamount= checkoutTotal+100;
-      console.log("You will pay sh. "+deliceryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+      console.log("You will pay Ksh. "+deliceryamount+" on delivery");
+      $("#totalbill").append("Your total price and delivery fee is: "+deliceryamount);
     });
 
     // when one clicks place order button
@@ -172,7 +171,7 @@ $("button.proceed").click(function(event){
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal+100;
       console.log("Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
@@ -180,12 +179,12 @@ $("button.proceed").click(function(event){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+        $("#finallmessage").append(person + ", We have recieved your order and it will be delivered to you at "+location+ ". Prepare Ksh. "+deliceryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
       else {
-        alert("Please fill in the details for delivery!");
+        alert("Please fill in the details");
         $(".delivery").show();
         $("button#final-order").show();
       }
